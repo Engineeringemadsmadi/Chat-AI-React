@@ -1,0 +1,64 @@
+/*  max  هي أصغر من او تساوي */
+/* هى  هي اكبر من او تساوي */
+
+/* xl (Extra Large) */
+@media (min-width:1200px) {}
+
+/* xl (Extra Large) */
+@media (max-width:992px) {
+    .card {
+        margin-top: 30px !important;
+        padding-left: 15px !important;
+    }
+
+    .card-item {
+        width: 160px !important;
+        height: 160px !important;
+        margin-right: 15px !important;
+        padding: 9px !important;
+    }
+
+    .main .area-prompt .search {
+        width: 600px;
+    }
+
+    .main .icon {
+        bottom: 10px !important;
+        right: 10px !important;
+        font-size: 17px !important;
+        padding: 3px !important;
+    }
+
+    .main .card-item p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:800px) {
+    .card {
+        margin-top: 25px !important;
+        padding-left: 14px !important;
+    }
+
+    .card-item {
+        width: 150px !important;
+        height: 140px !important;
+        margin-right: 15px !important;
+        padding: 9px !important;
+    }
+
+    .main .area-prompt .search {
+        width: 500px;
+    }
+
+    .main .icon {
+        bottom: 8px !important;
+        right: 8px !important;
+        font-size: 16px !important;
+        padding: 3px !important;
+    }
+
+    .main .card-item p {
+        font-size: 14px;
+    }
+}

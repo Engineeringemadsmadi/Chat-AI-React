@@ -1,0 +1,193 @@
+.main {
+    flex: 1;
+    min-height: 100vh;
+    position: relative;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.var-m {
+    margin-top: 45px;
+}
+
+.main .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 140px;
+}
+
+.main .cards .card-item {
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+.main .cards .card-item:hover {
+    background-color: #dfe4ea;
+}
+
+.main .icon {
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #909090;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main h1:nth-of-type(2) {
+    color: #909090;
+}
+
+.main .cards .card-item p {
+    color: rgb(49, 49, 49);
+}
+
+.area-prompt {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.area-prompt input.search {
+    flex: 1;
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.search-box div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main .bottom-info {
+    color: rgb(49, 49, 49);
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.result {
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.result::-ms-scrollbar {
+    display: none;
+}
+
+.result-title {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.result .result-title p.par-qustion {
+    font-size: 1rem;
+}
+
+.result .result-title p.par-qustion,
+.result p.par-result {
+    margin-top: 1rem;
+    color: black;
+}
+
+.result .img-profile {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.result-data {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.chatai-icon {
+    width: 50px;
+}
+
+.loader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loader hr {
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .main .cards {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .area-prompt input.search {
+        font-size: 0.75rem;
+    }
+
+    .search-box {
+        gap: 4px;
+    }
+
+    .search-box div {
+        gap: 8px;
+    }
+
+    .main .bottom-info {
+        font-size: 0.75rem;
+    }
+}
